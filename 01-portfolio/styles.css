@@ -40,6 +40,19 @@ body {
   color: #777777;
 }
 
+@media screen and (max-width: 600px) {
+  /*Make all menu links full width*/
+  .navbar {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  .nav-item {
+    display: block;
+    width: 100%;
+  }
+}
+
 #who {
   height: calc(90vh - 10px);
   background-color: #1abc9c;
@@ -115,7 +128,7 @@ body {
   margin: 0;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .where-grid {
     grid-template-columns: 1fr;
   }
