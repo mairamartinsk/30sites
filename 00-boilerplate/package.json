@@ -1,10 +1,5 @@
 {
   "name": "30sites",
-  "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mairamartinsk/30sites.git"
-  },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "grunt": "^1.0.3",
