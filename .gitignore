@@ -90,5 +90,8 @@ typings/
 *.scss.map
 css/
 
+### Other ###
+00-boilerplate/
+
 
 # End of https://www.gitignore.io/api/sass,node,grunt
