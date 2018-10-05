@@ -29,9 +29,7 @@ module.exports = function(grunt) {
           })
         ]
       },
-      dist: {
-        src: "css/*.css"
-      }
+      dist: { src: "css/*.css" }
     },
 
     cssmin: {
@@ -51,9 +49,10 @@ module.exports = function(grunt) {
 
     watch: {
       // Compile everything into one task with Watch Plugin
-      css: {
-        files: "**/*.scss",
-        tasks: ["sass", "postcss", "cssmin"]
+      css: { files: "**/*.scss", tasks: ["sass", "postcss", "cssmin"] },
+      options: {
+        // Start a live reload server on the default port 35729
+        livereload: true
       }
     }
   });
