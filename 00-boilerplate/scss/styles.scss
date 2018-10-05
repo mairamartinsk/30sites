@@ -1,245 +1,33 @@
 body {
-  font-family: Montserrat, sans-serif;
   font-size: 1em;
   font-weight: normal;
   line-height: 1.5;
-  color: #f5f6f7;
-  background: #020304;
+  color: #444444;
+  background: #cdcdcd;
 }
 
-/* Header and Nav Styles */
-
-body .site-title {
-  position: fixed;
-  top: 40px;
-  left: 40px;
-  z-index: 6;
-  font-size: 20px;
-  font-weight: 900;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-}
-
-body input + label {
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  height: 20px;
-  width: 15px;
-  z-index: 5;
-}
-
-body input + label span {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  top: 50%;
-  margin-top: -1px;
-  left: 0;
-  display: block;
-  background: #020304;
-  transition: 0.5s;
-}
-
-body input + label span:first-child {
-  top: 3px;
-}
-
-body input + label span:last-child {
-  top: 16px;
-}
-
-body label:hover {
-  cursor: pointer;
-}
-
-body input:checked + label span {
-  opacity: 0;
-  top: 50%;
-}
-
-body input:checked + label span:first-child {
-  opacity: 1;
-  transform: rotate(405deg);
-}
-
-body input:checked + label span:last-child {
-  opacity: 1;
-  transform: rotate(-405deg);
-}
-
-body input ~ nav {
-  background: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  z-index: 3;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-  overflow: hidden;
-}
-
-body input ~ nav > ul {
-  text-align: center;
-  position: absolute;
-  top: 35%;
-  left: 20%;
-  right: 20%;
-}
-
-body input ~ nav > ul > li {
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 0s;
-}
-
-body input ~ nav > ul > li > a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #020304;
-  font-weight: 700;
-  font-family: sans-serif;
-  display: block;
-  padding: 30px;
-}
-
-body input:checked ~ nav {
-  height: 100%;
-  transition-delay: 0s;
-}
-
-body input:checked ~ nav > ul > li {
-  opacity: 1;
-  transition-delay: 0.5s;
-}
-
-/* About Section Styles */
-
-* #who {
-  padding: 100px 2rem 3rem;
-  text-align: center;
-}
-
-.section-image {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 3em;
-}
-
-.section-title {
-  font-size: 1.5em;
-  font-weight: 500;
-  margin: 5vh auto;
-  text-align: center;
-}
-
-.section-subtitle {
-  font-weight: 300;
-  margin: 1vh auto;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-/* Resume Section Styles */
-
-#what {
-  background: #f5f6f7;
-  color: #020304;
-  padding: 2rem;
-  text-align: center;
-}
-
-#what p {
-  margin-bottom: 1.5em;
-  font-size: 1em;
-  text-align: center;
-}
-
-.search {
-  padding: 0.625em 1em;
-  border: 1px solid #333333;
-  background-color: #fafafa;
-  color: #333333;
-  font-size: 0.7em;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-/* Gallery Section Styles */
-
-#where {
-  text-align: center;
-}
-
-#where .section-title {
-  text-align: center;
-}
-
-.where-grid {
-  list-style: none;
-  margin: 0;
-  text-align: center;
-  padding: 1em 2em;
-}
-
-#where img {
-  margin: 0 auto;
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-  margin-bottom: 2.8125em;
-}
-
-#where p {
-  font-size: 1em;
-  text-align: center;
-  margin-bottom: 0.625em;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 /* Footer Styles */
 
 footer {
-  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #676767;
   padding: 1.5em 1em;
   text-align: center;
 }
 
 .credit {
   font-size: 0.8rem;
-  color: #676767;
-}
-
-/* Media Queries */
-
-@media screen and (max-width: 600px) {
-  .section-image {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  }
-}
-
-/* CSS Grid Support */
-
-@supports (display: grid) {
-  .where-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    justify-items: center;
-    align-content: center;
-  }
-  @media screen and (max-width: 600px) {
-    .where-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+  color: #cdcdcd;
 }
