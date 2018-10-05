@@ -1,0 +1,33 @@
+body {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #444444;
+  background: #cdcdcd;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Footer Styles */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #676767;
+  padding: 1.5em 1em;
+  text-align: center;
+}
+
+.credit {
+  font-size: 0.8rem;
+  color: #cdcdcd;
+}
