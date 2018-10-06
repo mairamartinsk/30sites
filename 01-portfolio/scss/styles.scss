@@ -1,5 +1,39 @@
+// CSS Lock Implementation
+
+@mixin css-lock ($minf, $maxf, $minw: 600, $maxw: 1800, $property: padding, $unit: px) {
+  #{$property}: calc(#{$minf}#{$unit} + (#{$maxf} - #{$minf}) * ((100vw - #{$minw}#{$unit}) / (#{$maxw} - #{$minw}))) !important;
+
+  @media (max-width: #{$minw}#{$unit}) {
+    #{$property}: #{$minf}#{$unit} !important;
+  }
+  @media (min-width: #{$maxw}#{$unit}) {
+    #{$property}: #{$maxf}#{$unit} !important;
+  }
+}
+
+// Center elements. Define vertical, horizontal, or both position
+@mixin center($position) {
+  position: absolute;
+
+  @if $position == 'vertical' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @else if $position == 'horizontal' {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Custom Styles */
+
 .masthead {
-  min-height: 600px;
+  min-height: 80vh;
   border-radius: 0 !important;
 }
 
@@ -12,15 +46,13 @@
 }
 
 .custom-text-position {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
+  @include center(both);
+  margin: 0 auto;
 }
 
 .custom-text-padding {
-  padding: 4em 6em !important;
+  // ensure a padding between 1em/16px and 6em/96px
+  @include css-lock(16, 96, 600, 1800, padding, px);
 }
 
 .custom-grid-spacing {
