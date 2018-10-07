@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// Basic global styles
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  background-repeat: no-repeat;
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+a,
+button {
+  color: inherit;
+  transition: 0.3s;
+}
+
+body {
+  background-color: $body-bg;
+  color: $text;
+}
