@@ -13,12 +13,6 @@ html {
   background-repeat: no-repeat;
 }
 
-li,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 embed,
 img,
 object,
@@ -32,4 +26,9 @@ a,
 button {
   color: inherit;
   transition: 0.3s;
+}
+
+body {
+  background-color: $body-bg;
+  color: $text;
 }
