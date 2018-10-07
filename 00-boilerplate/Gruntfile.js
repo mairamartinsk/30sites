@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: "scss",
-            src: ["**/*.scss"],
+            src: ["main.scss"],
             dest: "css",
             ext: ".css"
           }
@@ -49,11 +49,7 @@ module.exports = function(grunt) {
 
     watch: {
       // Compile everything into one task with Watch Plugin
-      css: { files: "**/*.scss", tasks: ["sass", "postcss", "cssmin"] },
-      options: {
-        // Start a live reload server on the default port 35729
-        livereload: true
-      }
+      css: { files: "**/*.scss", tasks: ["sass", "postcss", "cssmin"] }
     }
   });
 

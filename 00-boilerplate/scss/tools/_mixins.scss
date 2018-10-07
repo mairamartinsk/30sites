@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// Useful Sass mixins
+// -----------------------------------------------------------------------------
+
+// CSS lock implementation (for font sizes, line height, padding, image dimensions, or any size/width/height declaration in CSS.)
+@mixin css-lock(
+  $minf,
+  $maxf,
+  $minw: 600,
+  $maxw: 1200,
+  $property: font-size,
+  $unit: px
+) {
+  #{$property}: calc(
+    #{$minf}#{$unit} + (#{$maxf} - #{$minf}) * ((100vw - #{$minw}#{$unit}) /
+          (#{$maxw} - #{$minw}))
+  );
+  @media (max-width: #{$minw}#{$unit}) {
+    #{$property}: #{$minf}#{$unit};
+  }
+  @media (min-width: #{$maxw}#{$unit}) {
+    #{$property}: #{$maxf}#{$unit};
+  }
+}
+// Define vertical, horizontal, or both position
+@mixin center($position) {
+  position: absolute;
+  @if $position == "vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $position == "horizontal" {
+    left: 50%;
+    transform: translate(-50%);
+  } @else if $position == "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+// For using ::before and ::after
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+// Truncate a text element; specify a max width value
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

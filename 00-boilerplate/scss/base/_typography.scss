@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// Basic typography and css locks
+// -----------------------------------------------------------------------------
+
+html {
+  // ensure a font size between 14 and 18 pixels
+  @include css-lock(16, 24, 600, 1800, font-size, px);
+}
+
+body {
+  font-family: $sans;
+  font-weight: $normal;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+}
