@@ -90,7 +90,6 @@ typings/
 *.scss.map
 
 ### Other ###
-00-boilerplate/
 01-portfolio-old/
 
 
