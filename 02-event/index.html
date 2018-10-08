@@ -11,46 +11,61 @@
 </head>
 
 <body>
-  <header id="header">
-    <div>
+  <header id="header" class="l-header">
+    <div class="l-header__site-info">
       <h1>Traduzindo Astrologuês</h1>
       <h4>Curso de Astrologia com Pathi Flor</h4>
       <h4>Barcelona, dezembro de 2018</h4>
     </div>
-    <div>
+    <div class="l-header__link">
       <a href="#description">Saiba Mais</a>
     </div>
   </header>
 
-  <section id="description">
+  <section id="description" class="l-banner">
     <h2>Isto é Traduzir Astrologuês</h2>
     <p>This site was created using Sass/SCSS and custom styles. Visual elements inspired by Overflow, from HTML5up.</p>
     <p>É com muita alegria que apresentamos o curso presencial TRADUZINDO ASTROLOGUÊS da Pathi Flor aqui em Barcelona!</p>
     <p>Criamos esse curso com muito carinho para todos que querem se aprofundar em astrologia e aprender a usar essa ferramenta para se conhecer melhor, pois o curso é focado em AutoReConhecimento. De lembrar de quem somos, de despertar para dentro. Seu mapa natal é a sua bússola pessoal e a vida fica mais fácil e prazerosa quando você a conhece.</p>
     <h2>Sobre a nossa astróloga e professora</h2>
     <p>A Pathi Flor é uma astróloga que trabalha com muitas terapias de cura como florais, meditação, yoga, dança, Tarot e tantas coisas lindas. Ela fala com autoridade e sensibilidade de quem tem muita intimidade com os astros. Sua abordagem leve e profunda faz a gente se enriquecer em poucos minutos de aula. A Pathi é uma colcha de retalhos linda e colorida que tem muito a acrescentar pois ela sabe falar com a nossa alma e nos ensina a falar com a nossa.</p>
-    <div>
+    <div class="l-button">
       <a href="#details">Detalhes do Curso</a>
     </div>
   </section>
 
-  <section id="details">
-    <div>
+  <section id="details" class="l-details__grid">
+    <div class="l-grid__half">
       <h2>Estrutura</h2>
       <p>O curso composto de 30 horas dividido entre 2 finais de semana.</p>
       <p>Vamos disponibilizar um delicioso coffee break durante as aulas e teremos a celebração final em um bar de tapas em uma praça graciosa perto do local do evento.</p>
     </div>
 
-    <div>
+    <div class="l-grid__half--left">
       <h2>Horários<br>7, 8 e 9 de dezembro<br>14, 15 e 16 de dezembro</h2>
       <p>Na 6ª feira (dias 7 e 14) a aula será das 19h às 22h. No Sábado e Domingo (dias 8, 9, 15 e 16) será das 10h às 19h (com uma pausa para o almoço).</p>
     </div>
+    <div class="l-grid__half--right">
+      <img src="./images/bg-alt.jpg" alt="">
+    </div>
 
-    <div>
+  <div class="l-grid__half">
+    <span class="separator"></span>
+  </div>
+
+    <div class="l-grid__half--left">
+      <img src="./images/bg-alt.jpg" alt="">
+    </div>
+    <div class="l-grid__half--right">
       <h2>Onde será o curso?</h2>
       <p>Carrer Mossen Juliana, 38 - Metrô L1 e L5 La sagrera</p>
     </div>
-    <div>
+
+    <div class="l-grid__half">
+      <span class="separator"></span>
+    </div>
+
+    <div class="l-button l-grid__half">
       <a href="#content">Conteúdo</a>
     </div>
   </section>
@@ -84,12 +99,12 @@
       <li>Quer ampliar sua visão espiritual, mental, emocional.</li>
     </ul>
     <p><strong>Não é necessário ter conhecimentos prévios de Astrologia.</strong></p>
-    <div>
+    <div class="l-button">
       <a href="#investment">Investimento</a>
     </div>
   </section>
 
-  <section id="investment">
+  <section id="investment" class="l-boxed">
     <h2>Investimento</h2>
     <p>O curso de 30 horas tem o custo de 315€ mas temos algumas promoções para vocês!</p>
     <p>1º lote ESPECIAL de lançamento PARA OS 5 PRIMEIROS INSCRITOS: 197€, incluindo 3 bônus lindos:</p>
@@ -104,12 +119,12 @@
       <li>2º lote (até dia 22/11): 287€</li>
       <li>3º lote (até dia 04/12): 315€</li>
     </ul>
-    <div>
+    <div class="l-button">
       <a href="#contact">Garanta sua Vaga!</a>
     </div>
   </section>
 
-  <div id="contact">
+  <div id="contact" class="l-boxed">
     <h2>Matricule-se</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
@@ -117,20 +132,20 @@
     <input type="text" name="name" placeholder="Nome">
     <input type="text" name="email" placeholder="Email">
     <textarea name="message" placeholder="Conta mais sobre você"></textarea>
-    <input type="submit" name="send" value="Fazer matrícula">
+    <input type="submit" name="send" value="Fazer matrícula"  class="l-button">
     </form>
   </div>
 
-  <footer id="footer">
-			<ul>
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-				<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+  <footer id="footer" class="l-footer">
+			<ul class="l-footer__social">
+				<li><a href="#" class="icon fa-twitter"><span class="label ">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label ">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-google-plus"><span class="label ">Google+</span></a></li>
+				<li><a href="#" class="icon fa-pinterest"><span class="label ">Pinterest</span></a></li>
+				<li><a href="#" class="icon fa-dribbble"><span class="label ">Dribbble</span></a></li>
+				<li><a href="#" class="icon fa-linkedin"><span class="label ">LinkedIn</span></a></li>
 			</ul>
-			<div class="copyright">
+			<div class="l-footer__copyright">
 					<p class="credit">made with ❤ by <a href="https://github.com/mairamartinsk" target="_blank" class="credit">@mairamartinsk</a></p>
 			</div>
 		</footer>
