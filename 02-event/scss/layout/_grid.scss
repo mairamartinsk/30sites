@@ -1,3 +1,45 @@
 // -----------------------------------------------------------------------------
 // Grid system
 // -----------------------------------------------------------------------------
+
+.l-details__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include for-tablet-landscape-up {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.l-grid__full,
+.l-grid__half,
+.l-grid__half--left,
+.l-grid__half--right {
+  grid-column: span 1;
+}
+
+.l-grid__full {
+  @extend .l-boxed;
+
+  @include for-tablet-landscape-up {
+    grid-column: span 4;
+  }
+}
+
+.l-grid__half {
+  margin: 2em auto;
+
+  @include for-tablet-landscape-up {
+    grid-column: 2 / span 2;
+
+    &--left {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    &--right {
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+  }
+}

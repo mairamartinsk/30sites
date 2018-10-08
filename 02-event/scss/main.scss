@@ -18,9 +18,9 @@
 @import "base/typography";
 
 // 5. Layout
-@import "layout/grid";
 @import "layout/header";
-@import "layout/footer";
+@import "layout/layout";
+@import "layout/grid";
 
 // 6. Component blocks
 @import "components/button";
