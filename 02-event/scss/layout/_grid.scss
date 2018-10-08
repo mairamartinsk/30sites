@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// Grid system
+// -----------------------------------------------------------------------------
+
+.l-details__grid {
+  width: 100%;
+  padding: 2em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  @include for-tablet-landscape-up {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.l-grid__full,
+.l-grid__half,
+.l-grid__half--left,
+.l-grid__half--right {
+  grid-column: span 1;
+}
+
+.l-grid__full {
+  @extend .l-boxed;
+
+  @include for-tablet-landscape-up {
+    grid-column: span 2;
+  }
+}
+
+.l-grid__half {
+  margin: 2em auto;
+
+  @include for-tablet-landscape-up {
+    grid-column: 1 / span 2;
+
+    &--left {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    &--right {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+  }
+}
+
+.l-grid__images {
+  width: 100%;
+  padding: 4em 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0.5vw;
+}

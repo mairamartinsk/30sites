@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// Details section styles
+// -----------------------------------------------------------------------------
+
+.details__box {
+  background: lighter($accent-color) url("../images/banner.svg") bottom center
+    no-repeat;
+  color: $dark-color;
+  padding: 1.5em;
+  border-radius: 0.4em;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}

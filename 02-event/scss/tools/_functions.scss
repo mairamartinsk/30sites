@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// Sass functions
+// -----------------------------------------------------------------------------
+
+// Generate custom lighter tints of a color
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+// Generate custom darker shades of a color
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Preselected tints and shades of any color
+@function darker($color) {
+  @return mix(black, $color, 60%);
+}
+@function dark($color) {
+  @return mix(black, $color, 30%);
+}
+@function light($color) {
+  @return mix(white, $color, 30%);
+}
+@function lighter($color) {
+  @return mix(white, $color, 60%);
+}

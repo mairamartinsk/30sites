@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+// 1. Tools
+@import "tools/functions";
+@import "tools/mixins";
+
+// 2. Vendors
+@import "vendors/normalize";
+
+// 3. Settings
+@import "Settings/global";
+@import "settings/breakpoints";
+@import "Settings/colorpalette";
+@import "Settings/fonts";
+
+// 4. Base
+@import "base/base";
+@import "base/typography";
+
+// 5. Layout
+@import "layout/header";
+@import "layout/layout";
+@import "layout/grid";
+
+// 6. Component blocks
+@import "components/header";
+@import "components/button";
+@import "components/arrow";
+@import "components/banner";
+@import "components/details";
+@import "components/content";
+@import "components/footer";
+
+// 7. Utilities
+@import "utilities/helpers";

@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// Basic global styles
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  background-repeat: no-repeat;
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+a,
+button {
+  color: inherit;
+  transition: 0.3s;
+}
+
+body {
+  background-color: $dark-color;
+  background-image: url("../images/overlay.png"), url("../images/bg.jpg");
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
+  color: $dark-color;
+}

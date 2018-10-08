@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// Site header
+// -----------------------------------------------------------------------------
+
+.l-header {
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+
+  &__site-info {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  &__link {
+    grid-area: 3 / 2 / 4 / 3;
+    align-self: end;
+  }
+}

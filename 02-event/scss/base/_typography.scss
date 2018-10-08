@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// Basic typography and css locks
+// -----------------------------------------------------------------------------
+
+html {
+  // ensure a font size between 16 and 24 pixels
+  @include css-lock(16, 24, 600, 1800, font-size, px);
+}
+
+body {
+  font-family: $sans;
+  font-weight: $regular;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: $light;
+}
+
+h1 {
+  font-weight: $bold;
+}
+
+h4 {
+  font-weight: $regular;
+}
+
+a {
+  font-size: 1.1rem;
+}
+
+.container-text {
+  margin: 0 auto;
+  max-width: 100%;
+
+  // limit paragraph width to 40~60 characters per line
+  @include css-lock(18, 30, 37.5, 75, width, em);
+}
+
+.site__title {
+  letter-spacing: 10px;
+}
+
+.site__desc {
+  letter-spacing: 3px;
+}

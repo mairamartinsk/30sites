@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// Contents section styles
+// -----------------------------------------------------------------------------
+
+.content {
+  margin-top: -0.5em;
+  padding-top: 3em;
+  border-radius: 0.4em;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  background: dark($accent-color) url("../images/banner.svg") bottom center
+    no-repeat;
+  color: $light-color;
+}
