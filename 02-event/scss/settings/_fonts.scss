@@ -1,13 +1,11 @@
 // -----------------------------------------------------------------------------
-// Font families and @font-face declarations
+// Font families and @font-face declarations (if any)
 // -----------------------------------------------------------------------------
 
 // Font stack variables
-$sans: Arial, Helvetica, sans-serif;
-$serif: Georgia, "Times New Roman", Times, serif;
-$mono: "Courier New", Courier, monospace;
+$sans: "Source Sans Pro", Arial, Helvetica, sans-serif;
 
 // Font weight variables
 $light: 300;
-$normal: 400;
+$regular: 400;
 $bold: 600;
