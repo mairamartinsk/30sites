@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// General site layout
+// -----------------------------------------------------------------------------
+
+.l-banner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 1.5em;
+}
+
+.l-boxed {
+  @extend .l-banner;
+
+  // content max-width varies according to screen size
+  @include css-lock(500, 600, 600, 1200, max-width, px);
+}
+
+
+.l-button {
+  margin: 0 auto;
+  padding: 2em 1em 1em;
+  text-align: center;
+
+  & a {
+    padding: 1em 2em;
+  }
+}

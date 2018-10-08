@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// Banner section styles
+// -----------------------------------------------------------------------------
+
+.banner {
+  color: $light-color;
+  background: dark($accent-color) url("../images/banner.svg") bottom center
+    no-repeat;
+}
