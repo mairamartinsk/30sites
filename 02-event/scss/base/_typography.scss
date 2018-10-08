@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 html {
-  // ensure a font size between 14 and 18 pixels
+  // ensure a font size between 16 and 24 pixels
   @include css-lock(16, 24, 600, 1800, font-size, px);
 }
 
@@ -20,4 +20,12 @@ p {
 
 h1 {
   font-weight: $bold;
+}
+
+.container-text {
+  margin: 0 auto;
+  max-width: 100%;
+
+  // limit paragraph width to 40~60 characters per line
+  @include css-lock(18, 30, 37.5, 75, width, em);
 }
