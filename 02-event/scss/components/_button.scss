@@ -17,3 +17,13 @@
     color: $light-color;
   }
 }
+
+.button--large {
+  font-size: 1.5rem;
+  background-color: darker($accent-color);
+  color: $light-color;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}

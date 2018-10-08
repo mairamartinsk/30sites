@@ -15,6 +15,22 @@
   @include css-lock(500, 600, 600, 1200, max-width, px);
 }
 
+.l-footer {
+  padding: 1em;
+
+  &__social {
+    margin: 2em auto;
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__copyright {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 
 .l-button {
   margin: 0 auto;
