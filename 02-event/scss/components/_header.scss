@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// Site header styles
+// -----------------------------------------------------------------------------
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__text {
+    color: $light-color;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+  }
+}
+
+.site__desc {
+  margin-top: 0.35em;
+  border-top: solid 1px $light-color;
+  padding: 0;
+}
+
+.site__desc::before {
+  content: "";
+  display: block;
+  border-top: solid 1px $light-color;
+  margin: 4px 0 0.8em 0;
+}
+
+.link__decoration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
